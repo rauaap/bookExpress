@@ -1,6 +1,6 @@
 const routerFactory = require('./routerFactory')
-const book = require('../models/book_model');
+const user = require('../models/user_model');
 
-router = routerFactory(book)
+router = routerFactory(user)
 
 module.exports = router;
