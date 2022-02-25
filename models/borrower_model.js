@@ -15,7 +15,7 @@ const borrower = {
     );
   },
   delete: function(id, callback) {
-    return db.query('delete from borrower where id_book=?', [id], callback);
+    return db.query('delete from borrower where id_borrower=?', [id], callback);
   },
   update: function(id, borrower, callback) {
     return db.query(
