@@ -9,7 +9,7 @@ const borrower = {
   },
   add: function(borrower, callback) {
     return db.query(
-      'insert into book (fname,lname,streetAddress) values(?,?,?)',
+      'insert into borrower (fname,lname,streetAddress) values(?,?,?)',
       [borrower.fname, borrower.lname, borrower.streetAddress],
       callback
     );
