@@ -17,7 +17,7 @@ const borrower = {
   delete: function(id, callback) {
     return db.query('delete from borrower where id_book=?', [id], callback);
   },
-  update: function(id, book, callback) {
+  update: function(id, borrower, callback) {
     return db.query(
       'update borrower set fname=?,lname=?, streetAddress=? where id_borrower=?',
       [borrower.fname, borrower.lname, borrower.streetAddress, id],
